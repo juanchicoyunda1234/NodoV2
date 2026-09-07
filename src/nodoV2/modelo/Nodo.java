@@ -8,6 +8,7 @@ public class Nodo {
     public Nodo(int numero, Nodo siguiente) {
         this.numero = numero;
         this.siguiente = siguiente;
+        this.anterior = null;
     }
 
     public int getNumero() {
