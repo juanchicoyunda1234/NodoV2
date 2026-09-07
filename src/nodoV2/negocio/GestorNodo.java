@@ -16,7 +16,7 @@ public class GestorNodo {
         }
         else{
             Nodo actual = head;
-            while(actual != null){
+            while(actual.getSiguiente() != null){
                 actual = actual.getSiguiente();
             }
             actual.setSiguiente(nuevo);
@@ -26,9 +26,9 @@ public class GestorNodo {
         Nodo actual = head;
         while(actual != null){
             if(actual.getSiguiente() == null){
-                System.out.println("|"+actual.getNumero()+"|"+ "| --> null");
+                System.out.print("|"+actual.getNumero()+"|"+ " --> null");
             }else{
-                System.out.println("|"+actual.getNumero()+"|"+ "| -->");
+                System.out.print("|"+actual.getNumero()+"|"+ " -->");
             }
             actual = actual.getSiguiente();
         }

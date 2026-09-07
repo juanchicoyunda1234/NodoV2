@@ -3,6 +3,7 @@ package nodoV2.modelo;
 public class Nodo {
     private int numero ;
     private Nodo siguiente;
+    private Nodo anterior;
 
     public Nodo(int numero, Nodo siguiente) {
         this.numero = numero;
